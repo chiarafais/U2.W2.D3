@@ -1,0 +1,91 @@
+@import "./partials/reset";
+@import "./partials/bottoni";
+@import "./partials/colori";
+@import "./partials/font";
+@import "./partials/mixins";
+@import "./partials/spaziature";
+@import "./partials/animazioni";
+
+header {
+    background-color: $bghero-color;
+    color: $font-color;
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $bgnav-color;
+    font-family: $sans-serif;
+    img {
+      width: 150px;
+      margin: $margin-1;
+    }
+    div {
+      display: flex;
+      margin-right: $margin-5;
+      a {
+        text-decoration: none;
+        color: $button2-color;
+        margin: $margin-1;
+      }
+    }
+  }
+  .headline{
+    font-family: $sans-serif;
+    text-align: center;
+    margin: $margin-5;
+    h1{
+        font-size: $font-size4; 
+    }
+    p{
+        font-size: $font-size2;
+        line-height: 30px;
+    }
+    button{
+        color: $font-color;
+        border: 0;
+        border-radius: 15px;
+        padding: $padding-2;
+        margin: $margin-1;
+    }
+    .buttonScopri{
+        background-color: $button1-color;
+    }
+    .buttonAccedi{
+        background-color: $button2-color;
+    }
+    .buttonContattaci{
+        background-color: $button3-color;
+    }
+  }
+  .sectionImg{
+    display: flex;
+    align-items: center;
+    img{
+        width: 50%;
+        border-radius: 160px;
+        margin: $margin-4;
+    }
+    p{
+        font-size: $font-size2;
+        font-family: $sans-serif;
+        text-align: center;
+        padding: $padding-4;
+        line-height: 40px;
+    }
+  }
+  .immagini{
+    div{
+        display: flex;
+    justify-content: space-around;
+    background-color: white; 
+    
+     img{
+        width: 20%;
+        border-radius: 50px;
+        margin: $margin-3;
+    }
+    }
+   
+   
+  }
+}
